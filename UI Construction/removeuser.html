@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LoginPage</title>
+<style type="text/css">
+#login_frame {
+	width: 339.9px;
+	height: 250px;
+	padding: 13px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	margin-top: -200px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 10px;
+	text-align: center;
+}
+#return_index {
+	position: relative;
+	float: left;
+	color:rgba(255,255,255,1);
+	font-family: "Times New Roman";
+}
+#return_staffpage {
+	position: relative;
+	float: right;
+	color:rgba(255,255,255,1);
+	margin-top: 10px;
+	font-family: "Times New Roman";
+}
+.text_field {
+	height: 42px;
+	width: 300px;
+	margin-top: 15px;
+	border-radius: 10px;
+	border: 1;
+	vertical-align: middle;
+	font-size: 20px;
+	font-family: "Times New Roman";
+}
+#but_remove {
+	width: 300px;
+	height: 42px;
+	background-color: rgba(255,102,51,1);
+	border-radius: 6px;
+	border: 0;
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	font-family: "Times New Roman";
+}
+#login {
+	vertical-align: middle;
+	padding-top: 20px;
+}
+.item {
+	width: 300px;
+	height: 42px;
+	margin: 40px auto;
+	position: relative;
+}
+.item label{
+	font-size: 25px;
+}
+.usedemo {
+	width: 300px;
+	height: 20px;
+	margin: 0px auto;
+	text-align: center;
+}
+.demo {
+	width: 300px;
+	text-align: left;
+	font-size: 18px;
+	line-height: 12px;
+	position: relative;
+	float: left;
+	height: 20px;
+	font-family: "Times New Roman";
+	margin-top: 10px;
+}
+</style>
+
+
+</head>
+
+<body style=" background-image:url(login_UnionStation.jpg); background-size:100%; background-repeat:no-repeat;">
+<div  class="login" id="login_frame">
+     <a id="return_index"; href="homepage.html" >Back Home</a>
+
+     <form id="remove" action="removeusersql.php" method="post">
+     <div class="item">
+			 		 <label for="fname">User ID To Remove: </label><br>
+           <input type="text"  id="userid" name="userid"  placeholder="User ID" maxlength="20" class="text_field" required="required"/>
+           <div class="usedemo"><span  class="demo" id="demo" name="demo"></span></div>
+     </div>
+
+      <div class="item">
+           <div id="remove_control">
+           <input type="submit" name="button" id="but_remove" value="REMOVE"/>
+           <a id="return_staffpage"; href="staffpage.php" >Back</a>
+           </div>
+      </div>
+  </form>
+
+</div>
+</body>
+</html>

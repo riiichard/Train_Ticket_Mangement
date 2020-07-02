@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>RegisterPage</title>
+<style type="text/css">
+#logon_frame {
+	width: 339.9px;
+	height: 500px;
+	padding: 13px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	margin-top: -250px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 10px;
+	text-align: center;
+}
+#return_index {
+	position: relative;
+	float: left;
+	color:rgba(255,255,255,1);
+	font-family: "Times New Roman";
+}
+#return_login {
+	float: right;
+	color:rgba(255,255,255,1);
+	font-family: "Times New Roman";
+}
+.text_field {
+	height: 42px;
+	width: 300px;
+	border-radius: 10px;
+	border: 1;
+	vertical-align: middle;
+	font-size: 20px;
+	font-family: "Times New Roman";
+}
+#but_logon {
+	width: 300px;
+	height: 42px;
+	background-color: rgba(255,102,51,1);
+	border-radius: 6px;
+	border: 0;
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	font-family: "Times New Roman";
+}
+#logon {
+	vertical-align: middle;
+	padding-top: 70px;
+}
+.item {
+	width: 300px;
+	height: 42px;
+	margin: 40px auto;
+	position: relative;
+}
+.usedemo {
+	width: 300px;
+	height: 20px;
+	margin: 0px auto;
+	text-align: center;
+}
+.pwdemo {
+	width: 300px;
+	height: 20px;
+	margin: 0px auto;
+	text-align: center;
+}
+.pw1demo {
+	width: 300px;
+	height: 20px;
+	margin: 0px auto;
+	text-align: center;
+}
+.emaildemo {
+	width: 300px;
+	height: 20px;
+	margin: 0px auto;
+	text-align: center;
+}
+.demo {
+	width: 300px;
+	text-align: left;
+	font-size: 18px;
+	line-height: 12px;
+	position: relative;
+	float: left;
+	height: 20px;
+	font-family: "Times New Roman";
+	margin-top: 10px;
+}
+</style>
+
+
+</head>
+
+<body style=" background-image:url(login_UnionStation.jpg); background-size:100%; background-repeat:no-repeat;">
+<div  class="logon" id="logon_frame">
+     <a id="return_index"; href="homepage.html" >Back Home</a>
+     <a id="return_login"; href="login.html" >Registered? Login</a>
+     <form id="logon" action="registersql.php" method="post">
+
+     <div class="item">
+           <input type="text"  id="userid" name="userid"  placeholder="Set User ID" maxlength="20" class="text_field"  required="required"/>
+           <div class="usedemo"><span  class="demo" id="demo" name="demo"></span></div>
+     </div>
+
+     <div class="item">
+           <input type="password" id="password" name="password"  placeholder="Set Password" maxlength="20" class="text_field" required="required"/>
+           <div class="pwdemo"><span class="demo" id="demo1"></span></div>
+     </div>
+
+      <div class="item">
+           <input type="password" id="password1" name="password1"  placeholder="Confirm Password" maxlength="20" class="text_field"  required="required"/>
+           <div class="pw1demo"><span class="demo" id="demo2"></span></div>
+      </div>
+
+			<div class="item">
+            <input type="email"  id="emailaddress" name="emailaddress"  placeholder="Your Email Address" maxlength="40" class="text_field" required="required"/>
+            <div class="emaildemo"><span  class="demo" id="demo3" name="demo3"></span></div>
+      </div>
+
+      <div class="item">
+           <div id="login_control">
+           <input type="submit" name="button" id="but_logon" value="REGISTER"/>
+           </div>
+      </div>
+  </form>
+
+</div>
+</body>
+</html>

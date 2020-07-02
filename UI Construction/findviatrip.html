@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LoginPage</title>
+<style type="text/css">
+#login_frame {
+	width: 739.9px;
+	height: 380px;
+	padding: 13px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -400px;
+	margin-top: -200px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 10px;
+	text-align: center;
+}
+#return_index {
+	position: relative;
+	float: left;
+	color:rgba(255,255,255,1);
+	font-family: "Times New Roman";
+}
+#return_userorder {
+	position: relative;
+	float: left;
+	color:rgba(255,255,255,1);
+	margin-top: 100px;
+	font-family: "Times New Roman";
+}
+#but_order {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 42px;
+	margin-top: 25px;
+	margin-left: 210px;
+	background-color: rgba(255,102,51,1);
+	border-radius: 6px;
+	border: 0;
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	font-family: "Times New Roman";
+	line-height: 42px;
+}
+#but_trip {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 42px;
+	margin-left: 210px;
+	margin-top: 25px;
+	background-color: rgba(255,102,51,1);
+	border-radius: 6px;
+	border: 0;
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	font-family: "Times New Roman";
+	line-height: 42px;
+}
+#but_passing {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 42px;
+	margin-left: 210px;
+	margin-top: 25px;
+	background-color: rgba(255,102,51,1);
+	border-radius: 6px;
+	border: 0;
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	font-family: "Times New Roman";
+	line-height: 42px;
+}
+#but_class {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 42px;
+	margin-left: 210px;
+	margin-top: 25px;
+	background-color: rgba(255,102,51,1);
+	border-radius: 6px;
+	border: 0;
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	font-family: "Times New Roman";
+	line-height: 42px;
+}
+#login {
+	vertical-align: middle;
+	padding-top: 20px;
+}
+a{text-decoration: none};
+</style>
+
+
+</head>
+
+<body style=" background-image:url(login_UnionStation.jpg); background-size:100%; background-repeat:no-repeat;">
+<div  class="login" id="login_frame">
+     <a id="return_index"; href="homepage.html" >Back Home</a>
+
+     <form id="alter" action="altertraintripsql.php" method="post"></br></br>
+			 <div class="item">
+						<div id="order_control">
+						<a id="but_order"; type="button"; href="findviatripnumber.html" >Find Passengers via Trip Number</a></br></br>
+						</div>
+			 </div>
+
+			 <div class="item">
+				 <div id="trip_control">
+				 <a id="but_trip"; type="button"; href="findpassfreq.html" >Find Passengers' Frequency</a></br></br>
+            </div>
+       </div>
+
+			 <div class="item">
+				 <div id="trip_control">
+				 <a id="but_passing"; type="button"; href="findpassing.html" >Find Passengers' Passing Stations</a></br></br>
+            </div>
+       </div>
+
+      <div class="item">
+					 <div id="class_control">
+				   <a id="but_class"; type="button"; href="findorderall.php" >Find Users Ordered All Trips</a></br></br>
+           <a id="return_userorder"; href="finduser.html" >Back</a>
+           </div>
+      </div>
+  </form>
+
+</div>
+</body>
+</html>
