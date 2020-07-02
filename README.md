@@ -40,7 +40,5 @@ departure date for every intermediate train station on every train trip.
 
 
 ## Acknowledgement
-
-  This is a group project. 
   
   Collaborated with three groupmates: Huancheng Yang & You Ding
