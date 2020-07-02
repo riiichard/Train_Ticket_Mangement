@@ -1,6 +1,9 @@
 # Train_Ticket_Mangement
 A simple Train Ticket Mangement System database (DBMS) project based on MySQL
 
+## Acknowledgement
+Collaborated with three groupmates: Huancheng Yang & You Ding
+
 ## Project Describtion
 This DBMS project is a train trip booking and management platform. It enables user to book train trip in advance (2 weeks)
 from one city to another. Users can also book tickets for their friends and families. Meanwhile, the system staffs can perform alternations
@@ -37,8 +40,3 @@ departure date for every intermediate train station on every train trip.
 10. Alter Trip Schedule
 11. Remove Trip Schedule
 
-
-
-## Acknowledgement
-  
-  Collaborated with three groupmates: Huancheng Yang & You Ding
